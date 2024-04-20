@@ -1,0 +1,24 @@
+.content {
+    display:block;
+    max-width:400px; /* em, rem, inch, sm, 100%, 100vh, 100vw */
+    margin:0 auto;
+}
+
+
+h1 {
+    font-size:20px;
+    text-transform:uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size:16px;
+    text-transform:uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin:0;
+    border-bottom:1px solid #ccc;
+}
+
+

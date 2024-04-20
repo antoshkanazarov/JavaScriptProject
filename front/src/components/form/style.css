@@ -1,0 +1,67 @@
+
+form.editForm {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:20px;
+    background: #f3f3f3;
+    border-radius:4px;
+    max-width:300px;
+    margin:20px;
+    height: max-content;
+}
+
+form.editForm label {
+    width:95%;
+    justify-content: start;
+    text-align: left;;
+}
+
+form.editForm label span {
+    text-align:left;
+    font-size:80%;
+}
+
+form.editForm input,
+form.editForm select {
+    width:100%;
+    border-bottom:1px solid #ccc;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    line-height:36px;
+    height:36px;
+    padding:0 12px;
+    background:#f3f3f3;
+    display:block;
+}
+
+form.editForm input:focus,
+form.editForm select:focus {
+    outline:none;
+}
+
+form.editForm select option {
+    line-height:36px;
+    height:36px;
+    display:block;
+}
+
+form.editForm button {
+    background: #1976D2;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:none;
+    padding:12px 15px;
+    cursor: pointer;
+}
+
+form.editForm button:hover {
+    background: #1E88E5;
+}
+
+form.editForm button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
