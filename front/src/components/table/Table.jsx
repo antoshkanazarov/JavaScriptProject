@@ -1,5 +1,4 @@
 import { useCallback, useState, useEffect } from "react";
-import { CChart } from '@coreui/react-chartjs'
 import './style.css';
 import config from "../../params/config";
 
@@ -10,26 +9,27 @@ export default function Table({nameTable, onChange, query = ''})
         body: [],
         sim: []
     });
-    const [pie, setPie] = useState({});
     const [loading, setLoading] = useState(false); 
 
     const fetchTable = useCallback(async () => {
         setLoading(true);
-        let getRequest = window.location.search;
-        let urlRequest = config.api + 'get/' + nameTable + '/';
-
-        if(query != '') {
-            urlRequest += '?q=' + query;
+        if(nameTable) {
+            let getRequest = window.location.search;
+            let urlRequest = config.api + 'get/' + nameTable + '/';
+    
+            if(query !== '') {
+                urlRequest += '?q=' + query;
+            }
+    
+            if(getRequest !== '' && query === '') {
+                urlRequest += getRequest;
+            }
+    
+            await getFetch(urlRequest);
         }
-
-        if(getRequest != '' && query == '') {
-            urlRequest += getRequest;
-        }
-
-        await getFetch(urlRequest);
         
         setLoading(false);
-    }, [nameTable, onChange, query]);
+    }, [nameTable, query]);
 
     useEffect(
         () => {
@@ -51,10 +51,11 @@ export default function Table({nameTable, onChange, query = ''})
 
         data.body.forEach(item => {
             title.push(item.TITLE);
-            budget.push(item.BUDGET)
+
+            if(item.BUDGET)
+                budget.push(item.BUDGET);
         });
 
-        setPie({title: title, budget: budget});
         setTable(data);
     }
 
@@ -95,8 +96,6 @@ export default function Table({nameTable, onChange, query = ''})
 
     async function setSort(event) {
         let th = event.target;
-        let parent = th.closest('tr');
-        let allTh = parent.querySelectorAll('th');
         let order = th.classList.contains('DESC') ? 'DESC' : 'ASC';
         let code = event.target.dataset.code;
         let url = config.api + 'get/' + nameTable + '/?sort=' + code + '&order=' + order;
@@ -181,7 +180,7 @@ export default function Table({nameTable, onChange, query = ''})
 
     return(
         <>
-        <table className="simple-table">
+        <table className={nameTable + " simple-table"}>
             <thead>
                 {!loading && getHeader(table.header)}
             </thead>

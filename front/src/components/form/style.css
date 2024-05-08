@@ -1,3 +1,6 @@
+.hidden {
+    display:none;
+}
 
 form.editForm {
     display:flex;
@@ -9,6 +12,11 @@ form.editForm {
     max-width:300px;
     margin:20px;
     height: max-content;
+}
+
+form.news {
+    width:100%;
+    max-width:90%;
 }
 
 form.editForm label {
@@ -47,7 +55,7 @@ form.editForm select option {
     display:block;
 }
 
-form.editForm button {
+form.editForm .buttons button {
     background: #1976D2;
     color: #fff;
     text-transform: uppercase;
@@ -57,11 +65,11 @@ form.editForm button {
     cursor: pointer;
 }
 
-form.editForm button:hover {
+form.editForm .buttons button:hover {
     background: #1E88E5;
 }
 
-form.editForm button:disabled {
+form.editForm .buttons button:disabled {
     background: #999;
     cursor: not-allowed;
 }
