@@ -4,24 +4,15 @@ const cards = {
         type: 'String',
             require: true,
             default: 'None',
-            loc: "Гос. номер",
+            loc: "Название книги",
             sort: true,
             editable: true
-    },
-    MODEL: {
-        type: 'DBRef',
-        require: true,
-        default: 'None',
-        loc: "Модель",
-        sort: true,
-        editable: true,
-        collection: 'models'
     },
     OWNER: {
         type: 'DBRef',
         require: true,
         default: 'None',
-        loc: "Владелец",
+        loc: "Читатели",
         sort: true,
         editable: true,
         collection: 'owners'

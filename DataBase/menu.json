@@ -1,0 +1,28 @@
+[{
+    "_id": {
+      "$oid": "65d5ff33dd4f877c6a2a0824"
+    },
+    "NAME": "Главная",
+    "LINK": "index"
+  },
+  {
+    "_id": {
+      "$oid": "65d5ff33dd4f877c6a2a0825"
+    },
+    "NAME": "Книги",
+    "LINK": "books"
+  },
+  {
+    "_id": {
+      "$oid": "65d5ff33dd4f877c6a2a0827"
+    },
+    "NAME": "Читатели",
+    "LINK": "owners"
+  },
+  {
+    "_id": {
+      "$oid": "65d5ff33dd4f877c6a2a0828"
+    },
+    "NAME": "Карточки",
+    "LINK": "cards"
+  }]

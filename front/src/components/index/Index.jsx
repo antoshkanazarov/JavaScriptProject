@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
 import { CChart } from "@coreui/react-chartjs";
-import NewsList from "../news/NewsList.jsx";
 
 export default function Index() {
     const [table, setTable] = useState({
@@ -158,7 +157,7 @@ export default function Index() {
                 />
             </div>
 
-            <NewsList></NewsList>
+            
         </>
     );
 }
