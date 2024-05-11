@@ -8,9 +8,6 @@ import Editor from "react-simple-wysiwyg";
 //Маска телефона
 import InputMask from "react-input-mask";
 
-//Транслитер
-import { transliter, slugify, isCyrillic } from "transliter"; //npm i transliter --save
-
 //Календарь
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -162,7 +159,6 @@ export default function Form({ nameForm, arValue = {} }) {
                                 required={item.require ? true : false}
                                 defaultValue={item.value && item.value}
                                 onChange={item.sim && callMethod}
-                                onKeyUp={item.code === "TITLE" && nameSimbol}
                                 readOnly={item.readOnly && true}
                                 step={
                                     item.step > 0
@@ -236,13 +232,6 @@ export default function Form({ nameForm, arValue = {} }) {
     function renderSimpleSelect(schema) {
         console.log(schema);
         return [];
-    }
-
-    function nameSimbol(event) {
-        let form = event.target.closest("form");
-        let codeField = form.querySelector("input[name=CODE]");
-        if(codeField)
-            codeField.value = slugify(event.target.value, "_");
     }
 
     function callMethod(event) {
