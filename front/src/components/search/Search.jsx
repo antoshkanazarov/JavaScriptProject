@@ -72,7 +72,7 @@ export default function Search({ onChange, nameCollection }) {
 
     function changeValue(event) {
         let field = event.target;
-        let parent = field.closest('label');
+        // let parent = field.closest('label');
         let key = field.id.split('_');
         let step = schema[key[0]].step;
 
@@ -131,6 +131,8 @@ export default function Search({ onChange, nameCollection }) {
                     case 'Date':
                         newRow.field = 'datepicker';
                     break;
+
+                    default:break;
                 }
                 
                 formElements.push(newRow);

@@ -29,7 +29,7 @@ export default function Header({ curPath }) {
         <header>
             <div className='LogoGroup'>
                 <img src={Logo} width="40px" alt="" />
-                <h1>Книжный каталог</h1>
+                <h1>Литературный Переплет</h1>
             </div>
 
             <Menu curPath={curPath} />
@@ -37,7 +37,7 @@ export default function Header({ curPath }) {
             <div className='timer'>{ now.toLocaleTimeString() }</div>
         </header>
         <h2>
-            {curPath != "" && lang[curPath]}
+            {curPath !== "" && lang[curPath]}
             {curPath === "" && lang.index}
         </h2>
         </>

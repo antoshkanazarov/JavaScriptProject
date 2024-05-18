@@ -1,14 +1,14 @@
 header {
     display: flex;
-    background: #eee;
-    border-bottom: 1px solid #999;
+    background: #F5E0B6;
+    border-bottom: 2px solid #F5B164;
     justify-content: space-between;
     padding:10px 30px;
 }
 
 header .LogoGroup {
     display: flex;
-    width: 60px;
+    width: 80px;
     gap:15px;
 }
 

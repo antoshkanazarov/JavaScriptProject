@@ -13,7 +13,7 @@ menu li {
     margin:0;
     padding: 5px 10px;
     border-radius:4px;
-    color: #fff;
+    color: #F5E0B6;
     cursor: pointer;
 }
 
@@ -21,14 +21,14 @@ menu li a {
     color: black;
 }
 
-menu li:hover {
+/* menu li:hover {
     background-color: #1E88E5;
-}
+} */
 
 menu li.selected {
-    background: #333;
+    background: #F5C164;
 }
 
 menu li.selected a {
-    color:#fff;
+    color:#000;
 }
