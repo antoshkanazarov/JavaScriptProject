@@ -7,7 +7,7 @@ form.editForm {
     flex-wrap:wrap;
     gap:10px;
     padding:20px;
-    background: #f3f3f3;
+    background: #F5D264;
     border-radius:4px;
     max-width:300px;
     margin:20px;
@@ -33,14 +33,14 @@ form.editForm label span {
 form.editForm input,
 form.editForm select {
     width:100%;
-    border-bottom:1px solid #ccc;
+    border-bottom:2px solid #F5D264;
     border-top:0;
     border-left:0;
     border-right:0;
     line-height:36px;
     height:36px;
     padding:0 12px;
-    background:#f3f3f3;
+    background: #F5E0B6;
     display:block;
 }
 
@@ -66,10 +66,10 @@ form.editForm .buttons button {
 }
 
 form.editForm .buttons button:hover {
-    background: #1E88E5;
+    background: #F5DED8;
 }
 
 form.editForm .buttons button:disabled {
-    background: #999;
+    background: #FF9140;
     cursor: not-allowed;
 }

@@ -17,11 +17,13 @@
 }
 
 .searchPanel button {
-    line-height: 36px;
-    width: 57.6px;
+    line-height: 30px;
+    width: 57.5px;
     padding:10x 0;
     background: url('./images/filter.png') no-repeat center;
     cursor: pointer;
+    background-size: 85%;
+    border: none;
 }
 
 .overlay {
