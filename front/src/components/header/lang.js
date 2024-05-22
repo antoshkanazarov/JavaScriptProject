@@ -1,7 +1,7 @@
 const lang = {
     index: "Главная",
     books: "Книги",
-    cards: "Карточки",
+    cards: "Отзывы",
     menu: "Меню",
     owners: "Читатели"
 }
