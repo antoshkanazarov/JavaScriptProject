@@ -60,5 +60,122 @@
     "TITLE": "Мертвые души",
     "PRICE": 199,
     "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a77"
+    },
+    "AUTHOR": "Александр Пушкин",
+    "TITLE": "Борис Годунов",
+    "PRICE": 229,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a78"
+    },
+    "AUTHOR": "Александр Пушкин",
+    "TITLE": "Медный всадник",
+    "PRICE": 120,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a79"
+    },
+    "AUTHOR": "Александр Грибоедов",
+    "TITLE": "горе от ума",
+    "PRICE": 199,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a80"
+    },
+    "AUTHOR": "Николай Гоголь",
+    "TITLE": "Ревизор",
+    "PRICE": 199,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a81"
+    },
+    "AUTHOR": "Николай Гоголь",
+    "TITLE": "Шинель",
+    "PRICE": 150,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a82"
+    },
+    "AUTHOR": "Иван Тургенев",
+    "TITLE": "Муму",
+    "PRICE": 350,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a83"
+    },
+    "AUTHOR": "Иван Тургенев",
+    "TITLE": "Бежин луг",
+    "PRICE": 199,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a84"
+    },
+    "AUTHOR": "Денис Фонвизин",
+    "TITLE": "Недоросль",
+    "PRICE": 200,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a85"
+    },
+    "AUTHOR": "Лев Толстой",
+    "TITLE": "Анна Каренина",
+    "PRICE": 400,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a86"
+    },
+    "AUTHOR": "Антон Чехов",
+    "TITLE": "Вишневый сад",
+    "PRICE": 349,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a87"
+    },
+    "AUTHOR": "Александр Пушкин",
+    "TITLE": "Станционный смотритель",
+    "PRICE": 199,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a88"
+    },
+    "AUTHOR": "Лев Толстой",
+    "TITLE": "После бала",
+    "PRICE": 199,
+    "COUNTRY": "Russia"
+  },
+  {
+    "_id": {
+      "$oid": "65a777dfcd85224383362a89"
+    },
+    "AUTHOR": "Антуан де Сент-Экзюпери",
+    "TITLE": "Маленький принц",
+    "PRICE": 300,
+    "COUNTRY": "France"
   }
 ]

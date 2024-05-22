@@ -88,14 +88,14 @@ export default function Index() {
     return (
         <>
             <table className="simple-table">
-                <thead>
+                {/* <thead>
                     <tr>
                         <th>Коллекция</th>
                         <th>Индексы</th>
                         <th>Кол-во документов</th>
                     </tr>
-                </thead>
-                <tbody>
+                </thead> */}
+                {/* <tbody>
                     {!loading &&
                         table.body.map((row) => (
                             <tr key={row._id} id={row._id}>
@@ -104,13 +104,15 @@ export default function Index() {
                                 ))}
                             </tr>
                         ))}
-                </tbody>
+                </tbody> */}
             </table>
 
             <div>
-                <h3>Документы:</h3>
+                <h3>Авторы:</h3>
                 <CChart
                     type="doughnut"
+                    height='5px'
+                    width='5px' 
                     data={{
                         labels: pie.labels,
                         datasets: [
@@ -132,7 +134,7 @@ export default function Index() {
                 />
             </div>
 
-            <div>
+            {/* <div>
                 <h3>Индексы:</h3>
                 <CChart
                     type="doughnut"
@@ -155,7 +157,7 @@ export default function Index() {
                         },
                     }}
                 />
-            </div>
+            </div> */}
 
             
         </>
