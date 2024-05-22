@@ -9,11 +9,16 @@ export default function Container({ curPath }) {
     const [row, setRow] = useState({});
     const [query, setQuery] = useState("");
     const [collectionName, setCollectionName] = useState(false);
+    const [content, setContent] = useState('');
     console.log(curPath)
 
     const handle = (value) => {
         if (value.data) setRow(value.data[0]);
     };
+
+    const show = (value) => {
+        setContent(value);
+    }
 
     const handleSearch = (value) => {
         if (value !== "") setQuery(value);
@@ -43,13 +48,16 @@ export default function Container({ curPath }) {
                 collectionName && ( // collectionName === 'collection_name'
                     <Table
                         onChange={handle}
+                        onShow={show}
                         nameTable={collectionName}
                         query={query}
                     ></Table>
                 )
             }
 
-            
+            {
+                content && <Content value={content}></Content>
+            }
             {
                 //Если нет названия коллекции, то выводим индексную страницу
             !collectionName && <Index />

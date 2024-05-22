@@ -2,7 +2,7 @@ import { useCallback, useState, useEffect } from "react";
 import './style.css';
 import config from "../../params/config";
 
-export default function Table({nameTable, onChange, query = ''})
+export default function Table({nameTable, onChange, onShow, query = ''})
 {
     const [table, setTable] = useState({
         header: [],
@@ -165,6 +165,13 @@ export default function Table({nameTable, onChange, query = ''})
         onChange(answer);
     }
 
+    async function show(e) {
+        const url = config.api + 'get/' + nameTable + '/?id=' + e.target.value;
+        const response = await fetch(url);
+        const answer = await response.json();
+        onShow(answer);
+    }
+
     async function dropElement(e) {
         const url = config.api + nameTable + '/' + e.target.value + '/';
         const confirmWindow = window.confirm('Уверены?');
@@ -196,6 +203,7 @@ export default function Table({nameTable, onChange, query = ''})
 
                             <td>
                                 <button className='edit' onClick={edit} value={row._id}></button>
+                                <button className='show' onClick={show} value={row._id}></button>
                                 <button className='drop' onClick={dropElement} value={row._id}></button>
                             </td>
                         </tr>
