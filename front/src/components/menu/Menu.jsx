@@ -19,7 +19,7 @@ export default function Menu({curPath}) {
         <menu>   
             {
                 menu && menu.map(menuElement => (
-                    <li className={curPath == menuElement.LINK ? 'selected': null} key={menuElement._id}><a href={menuElement.LINK}>{menuElement.NAME}</a></li>
+                    <li className={curPath === menuElement.LINK ? 'selected': null} key={menuElement._id}><a href={menuElement.LINK}>{menuElement.NAME}</a></li>
                 ))
             }
         </menu>
